@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #4d24d4;
+    --secondary-color: white;
+    --third-color: black;
+    --gradient-color: linear-gradient(to right, #000000, #2600a3);
+}
+
+.background-color{background: var(--gradient-color);}
+.primary-color-text{color: var(--primary-color);}   /* Purple text */
+.secondary-color-text{color:var(--secondary-color);} /* White text */
+.third-color-text{color:var(--third-color);} /* Black text */
+.rborder{border-radius: 60px;}
+a {text-decoration: none;}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--gradient-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* White text on purple background */
+.primary-colorbg{
+ background: var(--primary-color);
+ color: var(--secondary-color);
+}
+
+/* White text on purple background */
+.secondary-colorbg{
+    background: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+/* Black text on purple background */
+.third-colorbg{
+    background:var(--primary-color);
+    color: var(--third-color);
+}
+
+/* Black text on white background */
+.fourth-colorbg{
+    background: var(--secondary-color);
+    color: var(--third-color);
+}
+
+/* White background with purple text and border */
+.primary-button {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Purple background with white text and border */
+.secondary-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
