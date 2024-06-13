@@ -5,6 +5,7 @@ import AssignmentOverview from './pageComponents/AssignmentOverview';
 import Dashboard from './pageComponents/Dashboard';
 import Login from './pageComponents/Login';
 import Signup from './pageComponents/Signup';
+import DesignAssignment from './pageComponents/DesignAssignment';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path ="/dashboard" element={<Dashboard />} />
           <Route path ="/AssignmentOverview" element={<AssignmentOverview />} />
+          <Route path ="/designAssignment" element={<DesignAssignment />} />
         </Routes>
       </div>
     </Router>
