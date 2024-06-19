@@ -3,7 +3,7 @@ import '../Account.css';
 import '../GeneralStyling.css';
 import AIvaluateNavBar from '../components/AIvaluateNavBar';
 import '../styles.css';
-import axios from 'axios';
+import axios from 'axios';//looks greattttttttt
 
 const Account = () => {
     const [firstName, setFirstName] = useState("");
