@@ -3,7 +3,7 @@
 .assignments-container {
   display: flex;
 
-  height: 100%;
+  height: 20000%;
 }
 
   
@@ -15,16 +15,8 @@
     height: 100%;
   }
   
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
   
-  nav ul li {
-    padding: 10px 0;
-    color: black;
-    cursor: pointer;
-  }
+  
   
   .contentt {
     float: right;
@@ -34,7 +26,7 @@
     margin-left: 380px;
     height: 600px;
     border-radius: 10px;
-    color: white;
+    color: rgb(170, 28, 28);
   }
   
   .header {
@@ -52,14 +44,28 @@
     color: black;
     border-radius: 40px;
     width: 1000px;
-    height:70px;
+    height: 10%; /* Adjust height to auto for dynamic content adjustment */
     margin: 30px;
     padding: 15px;
-    text-align: center;
+    text-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: -50px;
-  }
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Distribute space around items */
+}
+
+.course-card h3 {
+    font-size: 24px; /* Specific font size for h3 */
+    font-weight: bold; /* Bold font weight for h3 */
+    margin-bottom: 10px; /* Space between h3 and p */
+}
+
+.course-card p {
+    font-size: 16px; /* Smaller font size for p */
+    text-align: right; /* Align p text to the right */
+    margin-top: -10%; /* Push p to the bottom of the container */
+}
+  
   button {
     margin: 5px;
     width: 350px;
