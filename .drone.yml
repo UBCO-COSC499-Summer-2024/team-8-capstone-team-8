@@ -37,6 +37,7 @@ trigger:
   branch:
     - master
     - development
+    - ci-cd- setup-sample-branch
     - ci-cd-setup
   event:
     - pull_request
