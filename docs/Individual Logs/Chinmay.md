@@ -1,11 +1,12 @@
-Daily work log
+# Daily work log
+
 1. May 29
    - Tasks worked on:
        - Project plan final grammatical edits for first few sections (1 hour)
        - Project plan video recording and video editing (2 hours)
        - Team planning for tech stacks, and design (1 hour)
    - Features being worked on and linked project board issues:
-        - DB Design for design document      
+        - DB Design for design document
         - Use case models for design document
         - Review of UI design, system design, and DFDs for Level 0 and 1
    - Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
@@ -113,7 +114,7 @@ Daily work log
    - Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
         - Need to work on DB design (fixing problems with multiplicities and relationships between entities) for system
         - Need to work on use case models (journey lines) for system
-        - Complete review of design document    
+        - Complete review of design document
 7. June 4
    - Tasks worked on:
        - Use case models (2 hours)
@@ -129,4 +130,133 @@ Daily work log
         - DB Design (Large, Close to finished)
         - Complete review of design document (Medium, Close to finished)
    - Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
-        - Working on completing review of design document  
+        - Working on completing review of design document
+8. June 5
+   - Tasks worked on:
+       - Use case models revision with client feedback incorporated (4 hours)
+       - DB design revision with client feedback incorporated (4 hours)
+       - Journey lines, UML, DFDs, UI review (3 hours)
+   - Features being worked on and linked project board issues:
+        - Use case models, Issue #7
+        - DB Design, Issue #8
+        - Review of others' work in the design document
+   - Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+        - Design document (Large, Finished)
+        - Setting up tech stacks and CI/CD (Medium, Finished)
+        - Use case models (Large, Finished)
+        - DB Design (Large, Finished)
+        - Complete review of design document (Medium, Finished)
+   - Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+        - Working on containerizing major compoents of system architecture
+        - Recording video presentation for design plan
+        - Dockerize all major system components
+        - Setup DroneCI for CI/CD and automated testing
+        - Setup RDS, S3 from AWS
+        - Setup Express.js, PostgreSQL
+        - Setup reverse proxy
+        - Design login page
+9. June 6
+   - Tasks worked on:
+       - Setting up digital ocean (2 hours)
+       - PostgreSQL setup locally (2 hours)
+       - DDL designing and connecting to PostgreSQL (2.25 hours)
+   - Features being worked on and linked project board issues:
+        - Digital Ocean setup, Issue #33
+        - DDL Design, Issue #31
+        - PostgreSQL setup
+   - Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+        - Digital Ocean setup (Medium, WIP)
+        - DDL Design (Large, WIP)
+        - PostgreSQL setup (Medium, WIP)
+   - Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+        - Working on containerizing major compoents of system architecture
+        - Recording and editing video presentation for design plan
+        - Containerize all major system components
+        - Setup PostgreSQL
+        - Setup DroneCI for CI/CD and automated testing
+10. June 7
+
+- Tasks worked on:
+  - DDL rework and redesign to match foreign keys from relational model, and integration with PostgreSQL (5 hours)
+  - Containerization of Backend, with basic code for backend (5 hours)
+  - Recording and editing video for design plan presentation (3 hours)
+- Features being worked on and linked project board issues:
+  - DDL creation + PostgreSQL integration Issue #31
+  - Backend containerization Issue #32
+  - Setup http-proxy-middleware on backendIssue #34
+- Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+  - DDL creation + PostgreSQL integration (Large, completed)
+  - Backend containerization (Large, completed)
+  - Setup http-proxy-middleware on backendIssue (Small, completed)
+  - PostgreSQL + DigitalOcean integration (Large, WIP)
+- Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+  - Test login feature
+  - Setup hosting website for docker, website, and DB
+  - Create mini-presentation of project progress
+  - Creating issues for all features, finishable in 1-2 hours each
+  - Setup DroneCI for CI/CD and automated testing
+
+12 June 8
+
+- Tasks worked on:
+  - Backend container fixing (3.25 hours)
+- Features being worked on and linked project board issues:
+  - Backend container fixing Issue #32
+- Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+  - Backend container fixing Issue #32 (Large, WIP)
+- Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+  - Test login feature
+  - Setup hosting website for docker, website, and DB
+  - Create mini-presentation of project progress
+  - Creating issues for all features, finishable in 1-2 hours each
+  - Setup DroneCI for CI/CD and automated testing
+
+13 June 9
+
+- Tasks worked on:
+  - Backend container fixing (2 hours)
+- Features being worked on and linked project board issues:
+  - Backend container fixing Issue #32
+- Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+  - Backend container fixing Issue #32 (Large, WIP)
+- Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+  - Test login feature
+  - Setup hosting website for docker, website, and DB
+  - Create mini-presentation of project progress
+  - Creating issues for all features, finishable in 1-2 hours each
+  - Setup DroneCI for CI/CD and automated testing
+
+14 June 10
+
+- Tasks worked on:
+  - Backend container fixing (1 hour)
+  - Issue creation for backend (1 hour)
+- Features being worked on and linked project board issues:
+  - Backend container fixing Issue #32
+  - Creating issues for backend based on project plan, design plan, and tech stack
+- Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+  - Backend container fixing Issue #32 (Large, Finished)
+  - Issue creation
+- Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+  - Test login feature
+  - Setup hosting website for docker, website, and DB
+  - Create mini-presentation of project progress
+  - Creating issues for all features, finishable in 1-2 hours each
+  - Setup DroneCI for CI/CD and automated testing
+
+15 June 11
+
+- Tasks worked on:
+  - Frontend (4 hours)
+- Features being worked on and linked project board issues:
+  - Student submissions page Issue [UBCO-COSC499-Summer-2024/team-8-capstone-team-8#59](https://github.com/UBCO-COSC499-Summer-2024/team-8-capstone-team-8/issues/59)
+  - Admin/Prof Login page Issue #49
+- Currently completed/in-progress since last reporting date (task completed, task size, WIP (work in progress)):
+  - Student submissions page Issue [UBCO-COSC499-Summer-2024/team-8-capstone-team-8#59](https://github.com/UBCO-COSC499-Summer-2024/team-8-capstone-team-8/issues/59) (Medium, Finished)
+  - Admin/Prof Login page Issue #49 (Small, Finished)
+- Recap on my weekly goals (reflection on personal plan for the next cycle (3 days/4 days))
+  - Test login feature
+  - Setup hosting website for docker, website, and DB
+  - Create mini-presentation of project progress
+  - Creating issues for all features, finishable in 1-2 hours each
+  - Setup DroneCI for CI/CD and automated testing
