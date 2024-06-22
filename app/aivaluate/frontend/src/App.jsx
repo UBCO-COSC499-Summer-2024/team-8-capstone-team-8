@@ -19,7 +19,6 @@ import StudentManager from './pageComponents/StudentManager';
 import StudentViewSubmissions from './pageComponents/StudentViewSubmissions';
 import AdminProfLogin from './pageComponents/AdminProfLogin';
 import CourseHome from './pageComponents/CourseHome';
-import AllSubmissions from './pageComponents/AllSubmissions';
 import AssignmentSubpage from './pageComponents/AssignmentSubpage';
 const App = () => {
   return (
@@ -42,7 +41,6 @@ const App = () => {
           <Route path = "/studentviewsubmissions" element={<StudentViewSubmissions />} />
           <Route path="/admin-proflogin" element={<AdminProfLogin />} />
           <Route path="/CourseHome" element={<CourseHome />} />
-          <Route path="/AllSubmissions" element={<AllSubmissions/>} />
           <Route path="/assignmentSubpage" element={<AssignmentSubpage />} />
         </Routes>
       </div>
