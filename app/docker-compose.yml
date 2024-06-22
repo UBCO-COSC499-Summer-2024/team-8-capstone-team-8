@@ -22,6 +22,8 @@ services:
     volumes:
       - ./aivaluate/database:/docker-entrypoint-initdb.d
 
+# A database manager can be accessed at http://localhost:8080/
+
   adminer:
     image: adminer
     restart: always
@@ -54,3 +56,4 @@ services:
       DRONE_RPC_SECRET: ci-cd-setup-team-8
       DRONE_SERVER_HOST: droneci.ok.ubc.ca
       DRONE_SERVER_PROTO: https
+

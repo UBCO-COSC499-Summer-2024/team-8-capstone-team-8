@@ -23,4 +23,19 @@
 - Finished peer review
 - Did my own search on some project-related stuff 
 
+## Thursday, June 6 
+### 4 hours 
+- Worked on the UI design
+- Self-learn - React.js
 
+## Friday, June 7 
+### 3 hours 
+- Worked on the presentation video
+- Self-learn - React.js
+
+## Tuesday, June 11 
+### 4 Hours
+- Worked on issue 58
+- Workes on issue 60
+- Fixes some ongoing issues with my vs code and got it perfectly running
+- Self-study react

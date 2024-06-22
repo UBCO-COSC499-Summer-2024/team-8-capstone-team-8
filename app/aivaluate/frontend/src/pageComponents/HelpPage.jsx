@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../HelpPage.css';
 import AIvaluateNavBar from '../components/AIvaluateNavBar';
-import '../styles.css';
 import '../GeneralStyling.css';
 
 

@@ -30,8 +30,8 @@
   - Chinmay: 28 hours
   - Colton: 12.5 hours
   - Jerry: 12 hours
-  - Omar:  hours
-  - Aayush:  hours
+  - Omar: 7 hours
+  - Aayush: 7 hours
 - ### Table view of completed tasks on project board (by which username)
   8 tasks completed, by all team members contributing equally
 - ### Table view of in progress tasks on project board (by which username)

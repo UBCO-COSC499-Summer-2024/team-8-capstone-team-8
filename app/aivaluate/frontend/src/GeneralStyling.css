@@ -14,6 +14,8 @@ a {text-decoration: none;}
 
 html{
     background: var(--gradient-color);
+    min-width: 1300px;
+    min-height: 800px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -77,3 +79,7 @@ body {
     background-color: var(--gradient-color);
   }
 
+.hide{
+    display:none;
+    visibility: hidden;
+}

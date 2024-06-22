@@ -1,9 +1,9 @@
+/* CSS for the login and sign page */
 .auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    height: 100vh;  
   }
   
   .auth-form {
@@ -88,10 +88,8 @@
 
   .background{
     display: flex;
-    flex: row;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #000000, #2600a3);
   }
 
   .logoText{

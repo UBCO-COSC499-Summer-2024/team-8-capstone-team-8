@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../CreateCourse.css';
+import '../GeneralStyling.css';
 import AIvaluateNavBar from '../components/AIvaluateNavBar';
 import '../styles.css';
-import '../GeneralStyling.css';
-import '../CreateCourse.css';
 
 const CreateCourse = () => {
   const [courseName, setCourseName] = useState('');

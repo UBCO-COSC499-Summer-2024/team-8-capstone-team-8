@@ -1,7 +1,7 @@
 import CircumIcon from "@klarr-agency/circum-icons-react";
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles.css';
+import '../CourseCards.css';
 
 const Card = ({courseCode, courseName, user="stu"}) => {
   const navigate = useNavigate();

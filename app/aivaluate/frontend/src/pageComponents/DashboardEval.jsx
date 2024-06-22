@@ -6,7 +6,7 @@ import '../GeneralStyling.css';
 import AIvaluateNavBar from '../components/AIvaluateNavBar';
 import CourseCards from '../components/CourseCards';
 
-const Dashboard = () => {
+const DashboardEval = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   var notification = false;
@@ -31,9 +31,9 @@ const Dashboard = () => {
         
       </div>
       <AIvaluateNavBar navBarText='Hello Colton' tab="home" />
-      <CourseCards page="stu/dashboard"/>
+      <CourseCards page="prof/dashboard"/>
     </div>
   );
 };
 
-export default Dashboard;
+export default DashboardEval;
