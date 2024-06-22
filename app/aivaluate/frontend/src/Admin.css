@@ -1,0 +1,166 @@
+@import url('./GeneralStyling.css');
+@import url('./styles.css');
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 110px;
+    height: fit-content;
+    background: var(--gradient-color);
+}
+
+.side-menu {
+    position: fixed;
+    top: 150px;
+    left: 20px;
+    width: 200px;
+    height: calc(100vh - 170px);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+.side-menu a {
+    display: block;
+    padding: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 90px;
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 0 0 60px 60px;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 44px;
+    color: var(--secondary-color);
+}
+
+.user-info {
+    background: var(--secondary-color);
+    color: purple;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.user-info p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-info button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.user-info button:hover {
+    background: var(--button-hover-color);
+}
+
+.student-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.student-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.student-list li:hover {
+    background: var(--button-hover-color);
+}
+
+.student-list .delete-button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.student-list .delete-button:hover {
+    background: var(--button-hover-color);
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-details span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background: var(--button-hover-color);
+}

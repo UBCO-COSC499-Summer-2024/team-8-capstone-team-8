@@ -1,8 +1,3 @@
-// Last Edited: June 17, 2024
-// Contributor: Jerry Fan
-// Purpose: Backend Logic for course creation and fetching
-// Used by the CreateCourse.jsx in frontend
-
 const express = require('express');
 const router = express.Router();
 const { pool } = require('../dbConfig'); 
@@ -32,6 +27,18 @@ router.get('/courses', async (req, res) => {
         console.error('Error fetching courses:', error);
         res.status(500).send({ message: 'Error fetching courses' });
     }
+});
+
+// Drop a course
+router.delete('/courses/:courseId', (req, res) => {
+    const courseId = req.params.courseId;
+    pool.query('DELETE FROM "Course" WHERE "courseId" = $1', [courseId], (err, results) => {
+        if (err) {
+            console.error('Error dropping course:', err);
+            return res.status(500).json({ error: 'Database error' });
+        }
+        res.status(204).send();
+    });
 });
 
 module.exports = router;

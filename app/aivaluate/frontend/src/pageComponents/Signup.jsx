@@ -66,7 +66,7 @@ const Signup = () => {
         major
       });
       console.log('Signup successful:', response.data);
-      navigate('/login'); // Redirect to login after successful signup
+      navigate('/login');
     } catch (error) {
       console.error('There was an error signing up:', error);
       if (error.response && error.response.data && error.response.data.errors) {

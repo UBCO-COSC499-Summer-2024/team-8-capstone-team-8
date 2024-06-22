@@ -38,7 +38,7 @@ const Login = () => {
       const response = await axios.post('http://localhost:4000/stu/login', {
         email,
         password
-      }, { withCredentials: true }); // Ensure cookies are sent/received
+      }, { withCredentials: true });
       console.log('Login successful:', response.data);
       navigate('/dashboard');
     } catch (error) {

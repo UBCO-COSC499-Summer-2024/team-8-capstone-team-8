@@ -17,4 +17,3 @@ COPY . .
 EXPOSE 4000
 
 CMD ["sh", "-c", "echo 'DB_HOST: $DB_HOST'; echo 'DB_PORT: $DB_PORT'; while ! nc -z $DB_HOST $DB_PORT; do sleep 1; done && node server.js"]
-

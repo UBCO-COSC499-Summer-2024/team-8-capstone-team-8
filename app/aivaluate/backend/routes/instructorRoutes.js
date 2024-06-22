@@ -1,8 +1,3 @@
-// Contributor: Jerry Fan
-// Last Edited: June 17, 2024
-// Purpose: This file contains the routes for the instructor and TA endpoints
-// These routes are called in the CreateCourse.jsx
-
 const express = require('express');
 const router = express.Router();
 const { pool } = require('../dbConfig'); 
