@@ -11,7 +11,7 @@
 }
 
 .form-content {
-  color: black;
+  color: var(--third-color);
   padding: 20px;
   border-radius: 10px;
   margin-top: -50px;
@@ -25,17 +25,19 @@
 .prof-name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4d24d4;
+  color: var(--primary-color);
   width: 80%;
 }
 
-input {
-  width: 80%;
+input, .drop-down-menu {
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
-  border: 3px solid #3c00ff;
+  border: 3px solid var(--primary-color);
   border-radius: 60px;
   font-size: 1rem;
-  color: #4d24d4;
+  color: var(--primary-color);
+  box-sizing: border-box; 
 }
 
 input:disabled {
@@ -52,19 +54,26 @@ h3 {
 .instructor-input {
   width: 35%;
   margin-left: 0;
-  border:none;
+  border: none;
 }
 
 .create-course-button {
-  background-color: #5d60eb;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 60px;
   font-size: 1rem;
-  position: absolute;
-  bottom: -5px;
-  right:10px;
+  margin-top: 50px; /* Adjust position */
+  width:500px;
+  display: block; 
+  box-sizing: border-box;
 }
 
 .create-course-button:hover {
-  background-color: #030323;
+  background-color: var(third-color);
 }
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../GeneralStyling.css';
-import '../styles.css';
+import '../NavBar.css';
 
 const AIvaluateNavBar = ({navBarText , tab}) => {
   const [menuOpen, setMenuOpen] = useState(false);

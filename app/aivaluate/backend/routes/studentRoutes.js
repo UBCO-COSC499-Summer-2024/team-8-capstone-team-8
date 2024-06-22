@@ -1,8 +1,71 @@
+// Last Edited: June 17, 2024
+// Contributor: Jerry Fan
+// Purpose: Backend Logic for student account information update
+// Used by the Account.jsx in frontend
+
 const express = require('express');
 const router = express.Router();
-const { pool } = require('../dbConfig'); // Adjust the path according to your project structure
-const bcrypt = require('bcrypt');
+const { pool } = require('../dbConfig');
+const bcrypt = require('bcryptjs');
 
+router.get('/users/me', (req, res) => {
+    if (req.isAuthenticated()) {
+        const userId = req.user.studentId;
+
+        pool.query(
+            'SELECT "firstName", "lastName", email, "studentId" FROM "Student" WHERE "studentId" = $1',
+            [userId],
+            (err, results) => {
+                if (err) {
+                    console.error('Error fetching user details:', err);
+                    return res.status(500).json({ error: 'Database error' });
+                }
+                if (results.rows.length > 0) {
+                    res.json(results.rows[0]);
+                } else {
+                    res.status(404).json({ error: 'User not found' });
+                }
+            }
+        );
+    } else {
+        res.status(401).json({ error: 'Unauthorized' });
+    }
+});
+
+// Update user details
+router.put('/users/update', async (req, res) => {
+    if (req.isAuthenticated()) {
+        const userId = req.user.studentId;
+        const { firstName, lastName, email, password } = req.body;
+
+        try {
+            let hashedPassword;
+            if (password) {
+                hashedPassword = await bcrypt.hash(password, 10);
+            }
+
+            pool.query(
+                `UPDATE "Student" 
+                SET "firstName" = $1, "lastName" = $2, email = $3, "password" = COALESCE($4, "password")
+                WHERE "studentId" = $5
+                RETURNING "firstName", "lastName", email, "studentId"`,
+                [firstName, lastName, email, hashedPassword, userId],
+                (err, results) => {
+                    if (err) {
+                        console.error('Error updating user details:', err);
+                        return res.status(500).json({ error: 'Database error' });
+                    }
+                    res.json(results.rows[0]);
+                }
+            );
+        } catch (error) {
+            console.error('Error processing request:', error);
+            res.status(500).json({ error: 'Server error' });
+        }
+    } else {
+        res.status(401).json({ error: 'Unauthorized' });
+    }
+});
 
 // Route to get current student's ID from session
 router.get('/student/me', (req, res) => {
@@ -115,6 +178,29 @@ router.get('/student/:studentId/password', async (req, res) => {
         res.status(200).json({ password: result.rows[0].password });
     } catch (error) {
         console.error('Error fetching student password:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
+// Route to verify student password by studentId
+router.post('/student/:studentId/verifyPassword', async (req, res) => {
+    const studentId = parseInt(req.params.studentId);
+    const { currentPassword } = req.body;
+
+    try {
+        const result = await pool.query('SELECT "password" FROM "Student" WHERE "studentId" = $1', [studentId]);
+        if (result.rows.length === 0) {
+            return res.status(404).json({ message: 'Student not found' });
+        }
+
+        const isMatch = await bcrypt.compare(currentPassword, result.rows[0].password);
+        if (isMatch) {
+            res.status(200).json({ success: true });
+        } else {
+            res.status(401).json({ success: false, message: 'Incorrect password' });
+        }
+    } catch (error) {
+        console.error('Error verifying password:', error);
         res.status(500).json({ message: 'Internal server error' });
     }
 });

@@ -32,4 +32,11 @@
     color: #888;
     margin-right: 10px;
   }
+
+  .center-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
   

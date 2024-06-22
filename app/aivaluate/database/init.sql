@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS "Instructor"(
     "lastName" VARCHAR(100),
     "email" VARCHAR(200),
     "password" VARCHAR(300),
-    "department" VARCHAR(100),
-    "hasFullAccess" BOOLEAN
+    "department" VARCHAR(100), 
+    "isTA" BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE IF NOT EXISTS "Course" (
@@ -31,8 +31,15 @@ CREATE TABLE IF NOT EXISTS "Course" (
     "courseCode" VARCHAR(100),
     "maxStudents" INT CHECK ("maxStudents" > 0),
     "courseDescription" VARCHAR(1000),
-    "instructorId" INT,
-    FOREIGN KEY ("instructorId") REFERENCES "Instructor"("instructorId")
+    "isApproved" BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE IF NOT EXISTS "Teaches"(
+    "instructorId" INT NOT NULL,
+    "courseId" INT NOT NULL,
+    PRIMARY KEY ("instructorId", "courseId"),
+    FOREIGN KEY ("instructorId") REFERENCES "Instructor"("instructorId"),
+    FOREIGN KEY ("courseId") REFERENCES "Course"("courseId")
 );
 
 CREATE TABLE IF NOT EXISTS "EnrolledIn"(
@@ -144,17 +151,18 @@ VALUES ('John', 'Doe', 'john.doe@example.com', 'password1'),
     ON CONFLICT DO NOTHING;
 
 -- Insert dummy data into Instructor table
-INSERT INTO "Instructor" ("instructorId", "firstName", "lastName", "email", "password", "department", "hasFullAccess")
-VALUES (1, 'Robert', 'Brown', 'robert.brown@example.com', 'password4', 'Computer Science', true),
-    (2, 'Emily', 'Davis', 'emily.davis@example.com', 'password5', 'Mathematics', false),
-    (3, 'Michael', 'Wilson', 'michael.wilson@example.com', 'password6', 'Physics', true)
+INSERT INTO "Instructor" ("instructorId", "firstName", "lastName", "email", "password", "department", "isTA")
+VALUES (1, 'Robert', 'Brown', 'robert.brown@example.com', 'password4', 'Computer Science', false),
+    (2, 'Emily', 'Davis', 'emily.davis@example.com', 'password5', 'Mathematics', true),
+    (3, 'Michael', 'Wilson', 'michael.wilson@example.com', 'password6', 'Physics', false),
+    (4, 'Kevin', 'Zhang', 'kevin.zhang@example.com', 'password7', 'Computer Science', true)
     ON CONFLICT DO NOTHING;
 
 -- Insert dummy data into Course table
-INSERT INTO "Course" ("courseName", "courseCode", "courseDescription", "instructorId")
-VALUES ('Introduction to Programming', 'CS101', 'An introductory course on programming', 1),
-    ('Calculus I', 'MATH101', 'A course on basic calculus', 2),
-    ('Physics I', 'PHYS101', 'An introductory course on physics', 3)
+INSERT INTO "Course" ("courseName", "courseCode", "courseDescription")
+VALUES ('Introduction to Programming', 'CS101', 'An introductory course on programming'),
+    ('Calculus I', 'MATH101', 'A course on basic calculus'),
+    ('Physics I', 'PHYS101', 'An introductory course on physics')
     ON CONFLICT DO NOTHING;
 
 -- Insert dummy data into EnrolledIn table

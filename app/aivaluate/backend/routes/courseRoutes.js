@@ -1,3 +1,8 @@
+// Last Edited: June 17, 2024
+// Contributor: Jerry Fan
+// Purpose: Backend Logic for course creation and fetching
+// Used by the CreateCourse.jsx in frontend
+
 const express = require('express');
 const router = express.Router();
 const { pool } = require('../dbConfig'); 

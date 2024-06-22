@@ -1,6 +1,6 @@
 FROM node:20.14.0-buster as build
 
-WORKDIR /app
+WORKDIR /app/aivaluate/frontend
 
 COPY package.json .
 COPY package-lock.json .

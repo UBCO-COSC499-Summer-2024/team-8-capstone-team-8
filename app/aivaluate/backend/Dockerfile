@@ -4,6 +4,12 @@ WORKDIR /app/aivaluate/backend
 =======
 WORKDIR /app
 
+RUN apt-get update && \
+    apt-get install -y netcat-openbsd postgresql-client && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN which nc && nc -h
+
 COPY package*.json ./
 
 RUN npm install
@@ -27,3 +33,4 @@ ENV POSTGRES_HOST=db
 EXPOSE 5432
 
 CMD ["sh", "-c", "until PGPASSWORD=$POSTGRES_PASSWORD psql -h $POSTGRES_HOST -U $POSTGRES_USER -d $POSTGRES_DB -c 'SELECT 1' >/dev/null 2>&1; do echo 'Waiting for database connection...'; sleep 1; done && PGPASSWORD=$POSTGRES_PASSWORD psql -h $POSTGRES_HOST -U $POSTGRES_USER -d $POSTGRES_DB -f /docker-entrypoint-initdb.d/aivaluatedb.sql && node server.js"]
+CMD ["sh", "-c", "echo 'DB_HOST: $DB_HOST'; echo 'DB_PORT: $DB_PORT'; while ! nc -z $DB_HOST $DB_PORT; do sleep 1; done && node server.js"]

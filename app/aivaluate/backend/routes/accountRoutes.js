@@ -1,7 +1,12 @@
+// Last Edited: June 14, 2024
+// Contributor: Omar Hemed
+// Purpose: Backend Logic for course creation and fetching
+// This file is currently not ultilized in the frontend
+
 const express = require('express');
 const router = express.Router();
 const { pool } = require('../dbConfig');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // Fetch user details
 router.get('/users/me', (req, res) => {

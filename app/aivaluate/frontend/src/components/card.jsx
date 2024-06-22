@@ -1,13 +1,23 @@
 import CircumIcon from "@klarr-agency/circum-icons-react";
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles.css';
+import '../CourseCards.css';
 
 const Card = ({courseCode, courseName, user="stu"}) => {
   const navigate = useNavigate();
+
+  const handleClick = () => {
+    // If the card is the "Create Course" card, navigate to the CreateCourse page
+    // Otherwise, navigate to the CourseHome page
+    if (courseCode === 'Create Course') {
+      navigate('/CreateCourse');
+    } else {
+      navigate('/CourseHome');
+    }
+  };
   
   return (
-    <div className={courseCode === 'Create Course' ? "add-course-card course-card" : "course-card"} onClick={() => navigate('/CourseHome')}>
+    <div className={courseCode === 'Create Course' ? "add-course-card course-card" : "course-card"}  onClick={handleClick}>
         {courseCode === 'Create Course' ? (
         <img src="create-course2.svg" alt="Default Course Image" />
       ) : (
