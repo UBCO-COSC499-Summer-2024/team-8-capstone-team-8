@@ -1,0 +1,210 @@
+.create-assignment-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 250px;
+    margin-right: 250px;
+    box-sizing: border-box;
+    
+}
+
+.create-assignment-container {
+    padding: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 750px;
+    box-sizing: border-box;
+    border: red 2px solid;
+    align-items: center;
+}
+
+.assignment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+.breadcrumb {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.create-assignment-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-assignment-content h2 {
+    text-align: center;
+    color: var(--third-color);
+}
+
+.create-assignment-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-assignment-content label {
+    margin-bottom: 5px;
+    color: var(--third-color);
+}
+
+.title-text{
+    width: 500px;
+}
+
+.create-assignment-content input[type="text"],
+.create-assignment-content input[type="number"]{
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    resize: vertical;
+    color:var(--primary-color);
+    font-size: 15px;
+}
+.create-assignment-content textarea {
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    resize: vertical;
+    color:var(--primary-color);
+    font-size: 15px;
+    height: 100px;
+}
+
+.rubric-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.use-past-rubric {
+    color: var(--primary-color);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.optional {
+    color: var(--primary-color);
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.react-datepicker__input-container {
+    position: relative;
+    display: inline-block;
+    margin-left: -20px;
+    width: 100%;
+}
+
+.date-picker input[type="date"] {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.file-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.file-upload span {
+    color: var(--third-color);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-button:hover {
+    background: var(--third-color);
+}
+
+.available-rubrics {
+    margin-top: 20px;
+}
+
+.available-rubrics h3 {
+    text-align: center;
+    color: var(--third-color);
+}
+
+.available-rubrics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.available-rubrics li {
+    background: var(--secondary-color);
+    color: var(--third-color);
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .create-assignment-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .create-assignment-page {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.file-preview{
+    color: var(--primary-color);
+}

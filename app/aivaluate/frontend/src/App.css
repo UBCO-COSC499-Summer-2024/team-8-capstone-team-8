@@ -1,0 +1,32 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0px;
+}
+
+
+.App {
+  text-align: center;
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  width:fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.app-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #8c5ff4;
+}
+

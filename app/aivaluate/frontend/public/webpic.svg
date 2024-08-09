@@ -1,0 +1,38 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+    <!-- Background Gradient -->
+    <defs>
+      <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#0f2027"/>
+        <stop offset="50%" stop-color="#203a43"/>
+        <stop offset="100%" stop-color="#2c5364"/>
+      </linearGradient>
+    </defs>
+    <rect width="600" height="400" fill="url(#bgGradient)"/>
+  
+    <!-- Computer Screen -->
+    <rect x="150" y="80" width="300" height="200" rx="15" ry="15" fill="#333"/>
+    <rect x="170" y="100" width="260" height="160" fill="#111"/>
+  
+    <!-- 3D Text -->
+    <!-- HTML -->
+    <g transform="translate(210, 170) rotate(-20)">
+      <text x="0" y="0" font-family="Arial" font-size="30" fill="#e34c26" stroke="#000" stroke-width="1" font-weight="bold">HTML</text>
+      <text x="0" y="5" font-family="Arial" font-size="30" fill="#e34c26" opacity="0.7" transform="translate(-2, 2) rotate(5)">HTML</text>
+    </g>
+    
+    <!-- CSS -->
+    <g transform="translate(290, 140) rotate(10)">
+      <text x="0" y="0" font-family="Arial" font-size="30" fill="#264de4" stroke="#000" stroke-width="1" font-weight="bold">CSS</text>
+      <text x="0" y="5" font-family="Arial" font-size="30" fill="#264de4" opacity="0.7" transform="translate(2, 2) rotate(-5)">CSS</text>
+    </g>
+    
+    <!-- JavaScript -->
+    <g transform="translate(240, 210) rotate(-10)">
+      <text x="0" y="0" font-family="Arial" font-size="30" fill="#f0db4f" stroke="#000" stroke-width="1" font-weight="bold">JavaScript</text>
+      <text x="0" y="5" font-family="Arial" font-size="30" fill="#f0db4f" opacity="0.7" transform="translate(-2, 2) rotate(5)">JavaScript</text>
+    </g>
+    
+    <!-- Floating Effect -->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2s" repeatCount="indefinite"/>
+  </svg>
+  

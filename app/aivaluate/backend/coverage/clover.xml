@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1721106564772" clover="3.2.0">
+  <project timestamp="1721106564772" name="All files">
+    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
+    <file name="Logger.js" path="/Users/aayushchaudhary/Documents/GitHub/team-8-capstone-team-8/app/aivaluate/backend/Logger.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="8" type="stmt"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="7" count="44" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+    </file>
+  </project>
+</coverage>

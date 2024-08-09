@@ -1,0 +1,173 @@
+.rubric-container {
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid var(--primary-color);
+    border-radius: 60px;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    position: relative;
+    margin-left: 350px;
+    min-width: 850px;
+}
+
+.back-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.icon-size {
+    width: 24px;
+    height: 24px;
+}
+
+.empty-space{
+    width:stretch;
+}
+
+.bottom-bar{
+    display: flex;
+    width:stretch;
+    border-radius: 60px;
+}
+
+.title-rubric {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.title-rubric:focus{
+    border: 2px dashed red;
+}
+
+.rubric-text2 {
+    width: 90%;
+    height: 450px;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    resize: none;
+    margin-bottom: 0px;
+}
+
+.rubric-text2:focus{
+    border: 2px dashed red;
+    
+}
+
+.edit-textt {
+    display: flex;
+    margin-top: -5px;
+    margin-left:35px;
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.29);
+}
+.edit-text-2 {
+    position: relative;
+    display: flex;
+    margin-top: 520px;
+    margin-left:0px;
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.29);
+    width:70px;
+}
+
+.line-up-title{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-text2{
+    margin-left: 20px;
+    /* display:block; */
+}
+
+.confirm-button-rubric {
+    margin-right: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.assignment-button2{
+    display:flex;
+    width: stretch;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.confirm-button-rubric:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.disabled-button {
+    background-color: grey;
+    border: 2px solid grey;
+    color: white;
+    cursor: not-allowed;
+}
+
+.secondary-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.no-rubrics{
+    margin-left: 20px;
+}

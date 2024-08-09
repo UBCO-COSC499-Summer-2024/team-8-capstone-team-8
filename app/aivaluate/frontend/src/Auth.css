@@ -1,0 +1,134 @@
+/* CSS for the login and sign page */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    
+  }
+  
+  .auth-form {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display:inline-block;
+  }
+  
+  .auth-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .auth-toggle-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+  }
+  
+  .auth-toggle-btn.active {
+    color: white;
+    background: var(--primary-color);
+    border-radius: 23px;
+    height:40px;
+  }
+  
+  .auth-input {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: var(--primary-color);
+  }
+
+  .auth-input::placeholder {
+    font-size: 14px; /* Adjust the font size of the placeholder text */
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .back-to-login {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .auth-submit {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .background-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--radial-color);
+    height: 100vh; /* Ensure it covers the full height of the viewport */
+    width: 100vw;
+    background: var(--radial-color);
+  }
+
+  .logoText{
+    font-size: 2em;
+    color:white;
+    display: flex;
+    flex: column;
+  }
+  .logo{
+    display: flex;
+    flex: column;
+    margin-right: 50px;
+  }
+
+  .center-text-admin{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size:13px;
+    color: var(--third-color);
+  }
+
+  /*This adds the black border around the blue 'AI' in the AIvaluate logo that is on all the login or forgot password screens*/
+  .ai-text{
+    text-shadow: -1px 1px 0 var(--third-color),
+                1px 1px 0 var(--third-color),
+                1px -1px 0 var(--third-color),
+                -1px -1px 0 var(--third-color);
+    color: var(--primary-color);
+  }
+  

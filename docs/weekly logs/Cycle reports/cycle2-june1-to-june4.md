@@ -1,0 +1,40 @@
+# Cycle 2 Weekly Log
+- ## Date range: June 1 - June 4, 2024 
+- ### Which features were in the project plan cycle?
+  - Design Document
+  - DB Design
+  - System Design
+  - Use case models
+  - UI Design
+  - Data Flow Diagrams (Level 0 and Level 1)
+  - UML Diagram
+  - Use case diagram
+  - Journey Lines
+- ### Which tasks from the project board are associated with these features?
+  - Issue #5 (Design Plan Document)
+  - Issue #6 (System Design)
+  - Issue #7 (Use Case Models)
+  - Issue #8 (DB Design)
+  - Issue #9 (DFDs for Level 0 and Level 1)
+  - Issue #10 (UI Design)
+- ### Which tasks are going to be targeted from the next cycle with time estimates and owners (ie planning and who is going to own/work on each task)
+  - Issue #5 (All team members)
+  - Issue #6 (Jerry Fan)
+  - Issue #7 (Chinmay Arvind)
+  - Issue #8 (All team members)
+  - Issue #9 (Aayush Chaudary)
+  - Issue #10 (Colton Palfrey & Omar Hemed)
+- ### Burn-up chart (velocity)
+  - Generated burn-up chart with limited data from this cycle: <img width="925" alt="Screenshot 2024-06-05 at 7 14 34 AM" src="https://github.com/UBCO-COSC499-Summer-2024/team-8-capstone-team-8/assets/144177741/fe76ef51-9bed-4152-8903-e9b6f045ede1">
+- ### Times for team/individual
+  - Chinmay: 28 hours
+  - Colton: 12.5 hours
+  - Jerry: 12 hours
+  - Omar: 7 hours
+  - Aayush: 7 hours
+- ### Table view of completed tasks on project board (by which username)
+  8 tasks completed, by all team members contributing equally
+- ### Table view of in progress tasks on project board (by which username)
+  8 out of the 8 tasks nearing completion, waiting on one final review with team members and progress should be pushed to the main branch, with each team member contributing equally.
+- ### Test report/testing status
+  - No code to test yet.

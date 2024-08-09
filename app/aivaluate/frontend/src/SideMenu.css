@@ -1,0 +1,35 @@
+/* CSS for the side menu directory that shows up when you've selected a class to view. */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    max-width: 240px;
+    min-width: 240px;
+    height: stretch;
+    padding-top: 70px;
+    padding-left: 20px;
+    border: var(--primary-color) 2px solid;
+    border-bottom:none;
+  }
+
+  .side-menu a{
+    font-size: bold;
+    font-size: 22px;
+  }
+
+  .icon-div{
+    display:flex;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .class-selection{
+    display:flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .link-div{
+    display:flex;
+    align-items: center;
+  }

@@ -1,0 +1,175 @@
+.ai-section {
+    display: flex;
+    padding: 20px;
+    border-radius: 60px;
+    margin-left: 35px;
+    margin-top: -120px;
+    width: stretch;
+    padding-top: 50px;
+    padding-left: 30px;
+    margin-right: 35px;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.ai-settings-div {
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: stretch;
+}
+
+.ai-settings-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.textarea-button-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Adjust width to align with the left half */
+}
+
+.ai-settings-textarea {
+    width: 100%; /* Adjusted width to fit the container */
+    height: 200px; /* Fixed height */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none; /* Prevent resizing */
+    border-radius: 50px;
+    border: var(--primary-color) 2px solid;
+    padding: 20px;
+    margin-right: 20px; /* Add margin to the right for spacing */
+    cursor: text;
+}
+
+.update-ai {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.update-ai:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    gap: 5px; /* Adjust the gap between radio items to a smaller value */
+    align-items: flex-start; /* Align items to the start */
+    margin-left: 20px; /* Adjust margin between radio group and textarea */
+    margin-top: 20px; /* Set margin top */
+    width: 40%; /* Adjusted width to occupy right half */
+    color: var(--third-color);
+}
+
+.radio-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Space between radio button and label */
+    width: auto; /* Adjust to fit content */
+    position: relative;
+    color: var(--third-color);
+}
+
+.radio-item label {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Space between radio button and text */
+    width: auto; /* Adjust to fit content */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: var(--third-color);
+}
+
+.radio-item input[type="radio"] {
+    margin: 0; /* Remove any default margin */
+    vertical-align: middle; /* Ensure vertical alignment */
+}
+
+.icon-buttons {
+    display: flex;
+    margin-left: 50px; /* Adjusted margin to the left */
+    visibility: hidden; /* Hide the icons by default */
+    right: 0; /* Adjust position to the right */
+}
+
+.icon-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon-buttons button:hover {
+    color: var(--third-color);
+}
+
+.icon-buttons button.trash-icon {
+    color: red; /* Color the trashcan icon red */
+}
+
+.radio-item:hover .icon-buttons {
+    visibility: visible; /* Show the icons on hover */
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+    align-items: center;
+}
+
+.create-prompt {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.create-prompt:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+.prompt-name-input-s{
+    width: 250px;
+    border-radius: 50px;
+    border:2px solid var(--primary-color);
+    padding: 10px;
+}

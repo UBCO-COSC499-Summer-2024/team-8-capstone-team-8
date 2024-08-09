@@ -1,0 +1,142 @@
+.rubric-container {
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid var(--primary-color);
+    border-radius: 60px;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    position: relative;
+    margin-left: 350px;
+    min-width: 850px;
+}
+
+.back-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.icon-size {
+    width: 24px;
+    height: 24px;
+}
+
+.empty-space{
+    width:stretch;
+}
+
+.bottom-bar{
+    display: flex;
+    width:stretch;
+    border-radius: 60px;
+}
+
+.title-input {
+    margin-left: 90px;
+    width: 45%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.title-input:focus{
+    border: 2px dashed red;
+}
+
+.rubric-textarea {
+    width: 90%;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    resize: none;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.rubric-textarea:focus{
+    border: 2px dashed red;
+    
+}
+
+.edit-text {
+    display: flex;
+    margin-top: 10px;
+    margin-left:5px;
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.29);
+}
+.edit-text-2 {
+    position: relative;
+    display: flex;
+    margin-top: 520px;
+    margin-left:0px;
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.29);
+    width:70px;
+}
+
+.line-up-title{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.line-main-text{
+    margin-left: 20px;
+    display:flex;
+}
+
+
+.secondary-button {
+    position: absolute; /* Absolutely position within the bottom-bar */
+    right: 20px; /* Distance from the right */
+    top: 20px; /* Distance from the bottom */
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    width: 30%;
+    
+}
+.secondary-button:hover{
+    transform: scale(1.04);
+}
+.deadline-input {
+    margin-left: 90px;
+    width: 30%;
+    padding: 10px;
+    border: 2px solid RED;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: RED;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+

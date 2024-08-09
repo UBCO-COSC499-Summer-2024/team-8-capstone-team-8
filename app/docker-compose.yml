@@ -1,0 +1,126 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./aivaluate/frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+      - backend-admin
+      - backend-eval
+    networks:
+      - aivaluate-net
+
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    container_name: database
+    environment:
+      POSTGRES_DB: AIvaluatedb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./aivaluate/database:/docker-entrypoint-initdb.d
+    networks:
+      - aivaluate-net
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - aivaluate-net
+
+  backend:
+    build:
+      context: ./aivaluate/backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+    volumes:
+      - assignment_submissions:/app/aivaluate/backend/assignmentSubmissions
+    env_file:
+      - ./aivaluate/backend/.env
+    networks:
+      - aivaluate-net
+
+  backend-admin:
+    build:
+      context: ./aivaluate/backend-admin
+      dockerfile: Dockerfile
+    container_name: backend-admin
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    env_file:
+      - ./aivaluate/backend-admin/.env
+    networks:
+      - aivaluate-net
+
+  backend-eval:
+    build:
+      context: ./aivaluate/backend-eval
+      dockerfile: Dockerfile
+    container_name: backend-eval
+    ports:
+      - "6000:6000"
+    depends_on:
+      - db
+    volumes:
+      - assignment_keys:/app/aivaluate/backend-eval/assignmentKeys
+      - assignment_submissions:/app/aivaluate/backend/assignmentSubmissions
+    env_file:
+      - ./aivaluate/backend-eval/.env
+    networks:
+      - aivaluate-net
+
+  drone-server:
+    image: drone/drone:latest
+    container_name: drone-server
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/lib/drone:/data
+    environment:
+      DRONE_GITHUB_CLIENT_ID: Ov23liZvCwyDq8H6y4kq
+      DRONE_GITHUB_CLIENT_SECRET: 165c9dcb9fd1eb31f35512212abf4e3c74876551
+      DRONE_RPC_SECRET: ci-cd-setup-team-8
+      DRONE_SERVER_HOST: droneci.ok.ubc.ca
+      DRONE_SERVER_PROTO: https
+    networks:
+      - aivaluate-net
+
+  backend-ai:
+    build:
+      context: ./aivaluate/backend-ai
+      dockerfile: Dockerfile
+    container_name: backend-ai
+    ports:
+      - "9000:9000"
+    networks:
+      - aivaluate-net
+    env_file:
+      - ./aivaluate/backend-ai/.env
+    volumes:
+      - assignment_submissions:/app/aivaluate/backend/assignmentSubmissions
+      - assignment_keys:/app/aivaluate/backend-eval/assignmentKeys
+        
+networks:
+  aivaluate-net:
+    driver: bridge
+
+volumes:
+  assignment_submissions: 
+  assignment_keys:

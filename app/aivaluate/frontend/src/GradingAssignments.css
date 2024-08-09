@@ -1,0 +1,218 @@
+/* Main container */
+
+.content {
+  flex-grow: 1;
+  margin-left: 30px;
+  
+}
+
+/* Header styling */
+.assignment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.assignment-header h2 {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.back-button, .confirm-button, .mark-complete {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.back-button {
+  margin-right: 20px;
+}
+
+.confirm-button {
+  margin-left: 20px;
+}
+
+.score-div{
+  display:flex;
+  margin-top: -40px;
+}
+
+
+
+.aiscore {
+  margin-left: 20px;
+  font-size: 24px;
+  width: 350px;
+  color: var(--primary-color);
+}
+
+.assignment-text{
+  width: stretch;
+  margin-right: 20px;
+}
+
+/* Student info box styling */
+.student-info {
+  padding: 20px;
+  color: var(--primary-color);
+}
+
+
+.student-info h3 {
+  margin: 0 0 10px;
+}
+
+.due-date-container {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin-right: 20px;
+  color: red;
+}
+
+.align-flex{
+  display: flex;
+  margin-top: -30px;
+}
+
+.due-date {
+  margin: 0;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.edit-button, .save-button {
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: var(--secondary-color);
+  color: red;
+  border: solid 1px red;
+  height: 30px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: red;
+    color: var(--secondary-color);
+}
+
+.due-date-picker{
+  color: red;
+  font-size: 13px;
+  padding: 5px;
+  border: red solid 2px;
+}
+
+.due-date-container input[type="text"] {
+  width: 150px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.feedback, .evaluator-comments, .student-submission {
+  margin-bottom: 20px;
+  
+}
+
+.feedback h4, .evaluator-comments h4, .student-submission h4 {
+  margin: 0 0 10px;
+  
+}
+
+.evaluator-comments textarea {
+  width: stretch;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 70px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  resize: none;
+}
+
+.feedback textarea {
+  width: stretch;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  resize: none;
+}
+
+.student-submission a {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.student-submission div{
+  margin-top: 10px;
+}
+
+.mark-complete {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.mark-complete:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+
+
+
+.final-score{
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: var(--third-color);
+}
+
+.full-score{
+  color: var(--third-color);
+  margin-top: -1px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.final-score input {
+  width: 40px;
+  padding: 2px;
+  border: 0.5px dashed var(--third-color);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: -20px;
+}
+
+.final-score label {
+  flex-grow: 2;
+  margin: 0;
+  font-size: 24px;
+  color: var(--third-color);
+}
+
+.student-num{
+  color: var(--third-color);
+  margin-left: 20px;
+  font-size: 30px;
+  width: 500px;
+}

@@ -1,0 +1,33 @@
+.left-button{
+    display:flex;
+
+}
+
+.right-button{
+    display:flex;
+}
+
+.assignButton{
+    display:flex;
+    width: 280px;
+    padding: 10px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.assignButton:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}

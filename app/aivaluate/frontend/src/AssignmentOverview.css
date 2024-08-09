@@ -1,0 +1,64 @@
+.assignment-table-content {
+  flex-grow: 1;
+  height: 100%;
+  margin-right: 50px;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.assignment-table tr {
+  border-bottom: 3px solid var(--third-color); /* Line separating each row */
+
+}
+.assignment-table th,
+.assignment-table td {
+  color: var(--third-color); /* Ensure text color is visible */
+}
+
+.table-section {
+  overflow-x: auto;
+  padding-top: 0px;
+}
+
+.assignment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.assignment-table th, 
+.assignment-table td {
+  padding: 0px;
+  text-align: left;
+}
+
+.assignment-table .file-icon {
+  margin-right: 10px;
+}
+
+.icon-button, .link-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  padding: 0; 
+  margin: 0; 
+  display: inline;
+}
+
+.link-button {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.icon-button .file-icon {
+  font-size: inherit;
+}
+
+.icon-button:focus, .link-button:focus {
+  outline: none;
+}
+
+

@@ -1,0 +1,34 @@
+/* CSS for the notification drop down animation */
+.message-container {
+    padding: 20px;
+    border-radius: 60px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    width: 40%;
+    padding-top: 115px;
+    padding-left: 30px;
+    min-width: 600px;
+    font-size: 12px;
+    overflow: hidden;
+    animation: growDown 1s ease-out 1s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    cursor: default;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+.notification-container {
+    display: flex;
+    margin-top: 1px;
+    float: right;
+    font-weight: bold;
+    cursor: default;
+}
+.notification-container p{
+  cursor: default;
+}
+
+.notificationBubble{color: rgb(255, 183, 0);}

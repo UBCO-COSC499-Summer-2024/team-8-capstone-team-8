@@ -1,0 +1,92 @@
+.assignments-container {
+  display: flex;
+  width: 100%;
+  border-radius: 60px;
+}
+
+.assignment-content {
+  flex-grow: 1;
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 60px;
+  margin: 20px;
+  color: var(--third-color);
+  height: 100%;
+  margin-left: 400px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+}
+
+.back-button {
+  background: var(--secondary-color);
+  border: none;
+  color: var(--primary-color); 
+  font-size: 1.4rem; 
+  cursor: pointer;
+  border-radius: 50%; 
+  width: 60px;
+  height: 60px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-section {
+  background: var(--secondary-color);
+  color: var(--third-color);
+  border-radius: 60px; 
+  margin-top: 20px;
+  width: 100%;
+  padding: 30px; 
+  box-sizing: border-box; 
+}
+
+.feedback-content {
+  background: #e9e9fc;
+  padding: 60px; 
+  border-radius: 60px; 
+  margin-top: 10px;
+  text-align: left;
+  font-size: 1.5rem; 
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.evaluator-comment {
+  background: #e9e9fc;
+  padding: 60px; 
+  border-radius: 60px; 
+  margin-top: 10px;
+  text-align: left;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  box-sizing: border-box; 
+}
+
+.assignment-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.assignment-content-header h2 {
+  margin-left: 20px;
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 10px 50px; 
+  border-radius: 60px;
+  color: var(--primary-color);
+  margin-left: auto;
+  font-size: 2rem; 
+  text-align: center;
+}

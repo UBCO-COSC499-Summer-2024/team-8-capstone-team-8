@@ -1,0 +1,112 @@
+/* Main content area */
+.CreateAccPT-main-content {
+  display: flex;
+  margin-left: 350px;
+}
+
+/* Content wrapper */
+.CreateAccPT-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-left: 100px;
+  color: white;
+}
+
+/* User form styling */
+.CreateAccPT-user-form {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+/* Form group */
+.CreateAccPT-form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 700px;
+}
+
+/* Box styling */
+.CreateAccPT-box {
+  background: #3b3b3b;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  margin: 10px;
+  justify-content: left;
+}
+
+/* Box label styling */
+.CreateAccPT-box label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Input styling for text, email, and password */
+.CreateAccPT-box input[type="text"],
+.CreateAccPT-box input[type="email"],
+.CreateAccPT-box input[type="password"] {
+  padding: 10px;
+  margin-top: 5px;
+  width: 700px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Checkbox label styling */
+.CreateAccPT-checkbox-label {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
+
+/* Checkbox input styling */
+.CreateAccPT-checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+/* Create user button styling */
+.CreateAccPT-create-user-button {
+  display: flex;
+  width: 200px; /* Adjusted width */
+  padding: 10px 20px; /* Matching padding to Edit button */
+  margin-top: 20px; /* Added margin-top for spacing */
+  align-self: flex-end; /* Align to the right */
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 50px; /* Matching border radius to Edit button */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-right:150px;
+}
+
+/* Hover effect for create user button */
+.CreateAccPT-create-user-button:hover {
+  background-color:#0056b3;
+}
+
+.main-text-space{
+  width: 300px;
+  padding: 10px;
+  border-radius: 50px;
+}

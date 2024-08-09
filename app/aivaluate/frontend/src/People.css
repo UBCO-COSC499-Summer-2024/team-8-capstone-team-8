@@ -1,0 +1,36 @@
+.people-container {
+    display: flex;
+  }
+
+
+  .people-content {
+    margin-left: 350px; /* Adjust according to your sidebar width */
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .content-header {
+    margin-bottom: 20px;
+  }
+  
+  .people-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .person {
+    background-color: #c4c4c4;
+    color: #000;
+    padding: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+  }
+  
+  .person:nth-child(even) {
+    background-color: #fff;
+  }
+  

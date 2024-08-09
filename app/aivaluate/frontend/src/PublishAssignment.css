@@ -1,0 +1,144 @@
+.rubric-div{
+    padding: 20px;
+    margin: 20px;
+    color: var(--third-color);
+    max-height: 680px;
+}
+
+.click-to-edit{
+    color: grey;
+    font-size: 10px;
+    margin-top: 45px;
+    margin-left: 5px;
+    width: 200px;
+}
+
+.title-input {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-color);
+}
+
+.title-input:focus{
+    border: 2px dashed red;
+}
+
+.main-text{
+    margin-left: 20px;
+    display:block;
+    height: 350px;
+}
+
+.rubric-text {
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    resize: none;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.rubric-text:focus{
+    border: 2px dashed red;
+    
+}
+
+.click-to-edit2{
+    color: grey;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-top:-5px;
+    width: 200px;
+}
+
+.deadline{
+    display: flex;
+}
+
+.center-deadline{
+    display: flex;
+    align-items: center;
+}  
+
+.center-deadline h2 {
+    margin: 0; /* Remove default margins that might affect alignment */
+    line-height: 1; /* Ensure line-height doesn't interfere with vertical alignment */
+}
+
+
+.assignment-button{
+    display:flex;
+    width: 200px;
+    padding: 10px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.assignment-button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    }
+
+.assignment-button2{
+    display:flex;
+    width: stretch;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.assignment-button2:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    }
+
+
+.deadline-input {
+    margin-left: 20px;
+    width: 260px;
+    padding: 10px;
+    border: 2px solid RED;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: RED;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+

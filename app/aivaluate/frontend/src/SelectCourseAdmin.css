@@ -1,0 +1,21 @@
+.select-dropdown {
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-left: 10px;
+    flex: 1;
+}
+
+
+.user-info2{
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 900px;
+    position: relative;
+    min-height: 300px; /* Ensure minimum height */
+    margin-left: 40px;
+}
